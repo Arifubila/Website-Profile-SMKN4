@@ -1,4 +1,4 @@
-const Berita = require("../models/Berita");
+const Berita = require("./BeritaModel");
 
 exports.getAll = async (req, res) => {
   try {
