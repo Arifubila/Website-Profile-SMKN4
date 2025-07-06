@@ -13,6 +13,9 @@ app.use(express.json());
 // Routes
 const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth", authRoutes);
+const jurusanRoutes = require('./routes/jurusanRoutes');
+app.use('/api/jurusan', jurusanRoutes);
+
 
 // MongoDB connect
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
